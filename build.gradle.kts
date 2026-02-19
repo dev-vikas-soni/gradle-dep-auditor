@@ -4,11 +4,10 @@ plugins {
 }
 
 group = "com.github.vikas"
-version = "1.0.3"
+version = "1.0.4"
 
 repositories {
     mavenCentral()
-    gradlePluginPortal()
 }
 
 gradlePlugin {
@@ -16,19 +15,8 @@ gradlePlugin {
         create("depAuditor") {
             id = "com.github.vikas.dep-auditor"
             displayName = "DepAuditor - Unused Dependencies + Line Numbers"
-            description = """
-                Finds unused dependencies with exact line numbers and APK savings.
-                🚨 LINE 11 → sed -i '11d' → 9MB savings!
-            """.trimIndent()
+            description = "Finds unused deps with exact line numbers + APK savings"
             implementationClass = "com.vikas.DepAuditorPlugin"
-        }
-    }
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("mavenGradlePlugin") {
-            from(components["java"])
         }
     }
 }
