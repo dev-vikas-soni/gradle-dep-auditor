@@ -4,32 +4,26 @@ plugins {
     `maven-publish`
 }
 
-group = "com.github.vikas.dep-auditor"
-version = "1.0.0-SNAPSHOT"
-
-repositories {
-    gradlePluginPortal()
-    mavenCentral()
-}
-
 gradlePlugin {
     plugins {
         create("depAuditor") {
             id = "com.github.vikas.dep-auditor"
-            displayName = "🚀 Dependency Auditor"
-            description = "Unused deps, conflicts, vulns scanner"
+            displayName = "DepAuditor - Unused Dependencies + Line Numbers"
+            description = "Finds unused dependencies with exact line numbers and APK savings"
             implementationClass = "com.vikas.DepAuditorPlugin"
+            tags.set(listOf("dependency", "audit", "unused", "android", "kotlin"))
         }
     }
 }
 
 publishing {
-    repositories {
-        mavenLocal()
-    }
-}
+    publications {
+        create<MavenPublication>("mavenGradlePlugin") {
+            from(components["java"])
 
-dependencies {
-    implementation("org.ow2.asm:asm:9.7")
-    implementation("org.ow2.asm:asm-tree:9.7")
+            groupId = "com.github.vikas"
+            artifactId = "dep-auditor"
+            version = "1.0.0"
+        }
+    }
 }
