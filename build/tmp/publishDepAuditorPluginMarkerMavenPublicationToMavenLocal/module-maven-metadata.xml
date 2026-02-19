@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.vikas.dep-auditor</groupId>
+  <artifactId>com.github.vikas.dep-auditor.gradle.plugin</artifactId>
+  <versioning>
+    <latest>1.0.0-SNAPSHOT</latest>
+    <versions>
+      <version>0.1.0-SNAPSHOT</version>
+      <version>1.0.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20260219192054</lastUpdated>
+  </versioning>
+</metadata>

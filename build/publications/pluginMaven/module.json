@@ -1,0 +1,80 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.vikas.dep-auditor",
+    "module": "gradle-dep-auditor",
+    "version": "1.0.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.0.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "gradle-dep-auditor-1.0.0-SNAPSHOT.jar",
+          "url": "gradle-dep-auditor-1.0.0-SNAPSHOT.jar",
+          "size": 16784,
+          "sha512": "d475ca0bfeed8e2b43f2530e06bb5ea0fcb4c1ac2a7489648b6f1b272273ed798c9d3baa54dad802b777bc12d6bd98d94a2b28e96944b7e396f974c3ac9c961f",
+          "sha256": "cb5120a1141b76b8dbb1d6ba0c5e58896c84838358399c7e7d9db1b2a2eb8f1d",
+          "sha1": "5261a3932215c773162b477f2b0cb8bd1ee30388",
+          "md5": "ee9dd7ede81e457185e31aa652dbf017"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "9.7"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm-tree",
+          "version": {
+            "requires": "9.7"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gradle-dep-auditor-1.0.0-SNAPSHOT.jar",
+          "url": "gradle-dep-auditor-1.0.0-SNAPSHOT.jar",
+          "size": 16784,
+          "sha512": "d475ca0bfeed8e2b43f2530e06bb5ea0fcb4c1ac2a7489648b6f1b272273ed798c9d3baa54dad802b777bc12d6bd98d94a2b28e96944b7e396f974c3ac9c961f",
+          "sha256": "cb5120a1141b76b8dbb1d6ba0c5e58896c84838358399c7e7d9db1b2a2eb8f1d",
+          "sha1": "5261a3932215c773162b477f2b0cb8bd1ee30388",
+          "md5": "ee9dd7ede81e457185e31aa652dbf017"
+        }
+      ]
+    }
+  ]
+}
